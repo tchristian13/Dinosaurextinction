@@ -9,43 +9,52 @@ heading.style.color = 'red' //can change css of element
 
 
 const body = document.querySelector('.mess-with-me')
-heading.style.fontSize = ("40px")
+body.style.fontSize = "40px"
 
 
-const paragraph = paragraph.innerText = document.querySelector ('.mess-with-me')
-document.style.backgroundColor = green
+const paragraph =  document.querySelector ('.mess-with-me')
+paragraph.style.backgroundColor = 'green'
 
 const parag  = document.querySelector(".mess-with-me")
-document.style.visibility = hidden 
+parag.style.visibility = 'hidden'
 
 
 const app = document.querySelector('.app')
-image.style.height = "250px"
+app.style.height = "250px"
+
+ 
+
+// const image = document.querySelector('img') //grabs the first tag img
+// image.src = "https://i0.wp.com/urbannature.blog/wp-content/uploads/puffin-facing.jpg?ssl=1"
 
 const messWithMe = document.querySelector('.mess with me');
-messWithMe.addEventListener('click',function(){
-document.style.transition = 'orange';
+for (let mess of messWithMe)
+mess.addEventListener('click',function(){
+mess.style.transition = 'orange'
 });
 
 
-const swBtn  = document.querySelector('#switch-background');
+const swBtn = document.querySelector('#switch-background');
 const dinoRow = document.querySelector('#row');
+for (let rows of dinoRow)
 swBtn.addEventListener('click',function(){
-document.style.backgroundColor = 'green'; 
+rows.style.backgroundColor = 'green'
 });
 
-const BiggifyDino = document.querySelector('#biggify');
-BiggifyDino.addEventListener('mouseenter',function(){
-document.style.transition = 'width 0.3s ease';
-document.style.width = '200px'; 
+const biggifyDino = document.querySelector('#biggify');
+for(let dino of BiggifyDino){
+    dino.addEventListener('mouseenter',function(){
+      dino.style.transition = 'width 0.3s ease';
+        dino.style.width = '200px'; 
 });
+}
 
 
-
-const button = document.getElementById=('.toggle')
-const color = 'blue';
-buttun.addEventListener('click',() => {
-    if (element.style.backgroundColor === 'white ' || element.style.backgroundColor === '') {element.style.backgroundColor = 'blue';
+const button1 = document.getElementById=('#toggle')
+const color1 = 'blue';
+button1.addEventListener('click', () => {
+    if (element.style.backgroundColor === 'white' || element.style.backgroundColor === '')
+         {element.style.backgroundColor = 'blue';
      } else { 
        element.style.backgroundColor ='white';
      }
@@ -53,8 +62,7 @@ buttun.addEventListener('click',() => {
       
 
 
-// const image = document.querySelector('img') //grabs the first tag img
-// image.src = "https://i0.wp.com/urbannature.blog/wp-content/uploads/puffin-facing.jpg?ssl=1"
+
 
 const main = document.querySelector('.main') //grab by class
 
